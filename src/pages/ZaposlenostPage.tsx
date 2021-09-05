@@ -53,7 +53,7 @@ export default function ZaposlenostPage() {
                         <Form.Input type='number' value={bez} label='Bez skole' required onChange={setFormNumberState(setBez)} />
                         <Form.Input type='number' value={srednja} label='Srednja strucna sprema' required onChange={setFormNumberState(setSrednja)} />
                         <Form.Input type='number' value={fax} label='Fakultet' required onChange={setFormNumberState(setFax)} />
-                        <Form.Button error={dugmeError || undefined} fluid primary>Kreiraj</Form.Button>
+                        <Form.Button error={dugmeError || undefined} fluid primary style={{background:'#8b0000', justifyContent:'center'} }>Kreiraj</Form.Button>
                     </Form>
                 </Grid.Column>
             </Grid.Row>

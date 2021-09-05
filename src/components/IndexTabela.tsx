@@ -8,9 +8,9 @@ interface Props {
 export default function IndexTabela(props: Props) {
     return (
         <Table>
-            <Table.Header>
-                <Table.Row>
-                    <Table.HeaderCell>Godina</Table.HeaderCell>
+            <Table.Header >
+                <Table.Row >
+                    <Table.HeaderCell >Godina</Table.HeaderCell>
                     <Table.HeaderCell>Index cene</Table.HeaderCell>
                     <Table.HeaderCell>Inflacija</Table.HeaderCell>
                 </Table.Row>

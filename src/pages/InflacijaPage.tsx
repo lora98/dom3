@@ -5,6 +5,7 @@ import IndexTabela from '../components/IndexTabela'
 import Layout from '../components/Layout'
 import { IndexCene } from '../tipovi'
 import { setFormNumberState } from '../util'
+import '../Home.css';
 
 export default function InflacijaPage() {
     const [indeksi, setIndeksi] = useState<IndexCene[]>([{
@@ -33,9 +34,9 @@ export default function InflacijaPage() {
                         })
                         setGodina(prev => prev + 1);
                     }}>
-                        <Form.Input label='Godina' readOnly value={godina} />
+                        <Form.Input label='Godina' readOnly value={godina}  />
                         <Form.Input type='number' required label='Index cene' value={index} onChange={setFormNumberState(setIndex)} />
-                        <Form.Button>Dodaj</Form.Button>
+                        <Form.Button style={{background:'#8b0000', color:'white'}}>Dodaj</Form.Button>
                     </Form>
                 </Grid.Column>
             </Grid.Row>
